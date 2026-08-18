@@ -1,10 +1,17 @@
-jj2000
-======
+# jj2000
 
 Fork of jpeg2k code from https://code.google.com/p/jj2000/.
 
 This is a dependency for support of compression in Grib2 files in 
 netCDF-java and TDS (https://github.com/Unidata/tds).
+
+**Building**
+
+Build the project with:
+
+```sh
+./gradlew build
+```
 
 **Feature Requests & Bug Fixes**
 
@@ -21,6 +28,4 @@ Once you have subscribed, you may post your message to: thredds@unidata.ucar.edu
 
 **Contributing Code**
 
-We welcome bug fixes and other contributions to this code.  
-
-
+We welcome bug fixes and other contributions to this code.

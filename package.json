@@ -1,0 +1,9 @@
+{
+  "name": "jj2000",
+  "devDependencies": {
+    "semantic-release-preconfigured-conventional-commits": "1.1.157"
+  },
+  "engines": {
+    "node": "24.19"
+  }
+}
