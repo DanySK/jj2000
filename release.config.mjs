@@ -6,10 +6,16 @@ config.plugins.push(
     [
         "@semantic-release/exec",
         {
-            "publishCmd": publishCmd,
-        }
+            publishCmd,
+        },
     ],
-    "@semantic-release/github",
+    [
+        "@semantic-release/github",
+        {
+            successCommentCondition: false,
+            failCommentCondition: false,
+        },
+    ],
     "@semantic-release/git",
 )
 export default config
