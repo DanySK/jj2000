@@ -1,15 +1,9 @@
 [versions]
-kotest = "6.2.4"
 kotlin = "2.4.10"
-mockito = "5.23.0"
 
 [libraries]
-kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
-kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
-mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 
 [bundles]
-kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm", "mockito-core" ]
 
 [plugins]
 dokka = "org.jetbrains.dokka:2.2.0"

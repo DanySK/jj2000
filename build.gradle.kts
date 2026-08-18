@@ -30,10 +30,7 @@ multiJvm {
     jvmVersionForCompilation.set(8)
 }
 
-dependencies {
-    implementation(kotlin("stdlib"))
-    testImplementation(libs.bundles.kotlin.testing)
-}
+dependencies { }
 
 dependencyLocking {
     lockAllConfigurations()
@@ -43,17 +40,6 @@ kotlin {
     compilerOptions {
         allWarningsAsErrors = true
         freeCompilerArgs = listOf("-opt-in=kotlin.RequiresOptIn")
-    }
-}
-
-tasks.test {
-    useJUnitPlatform()
-    testLogging {
-        showStandardStreams = true
-        showCauses = true
-        showStackTraces = true
-        events(*TestLogEvent.entries.toTypedArray())
-        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
     }
 }
 
